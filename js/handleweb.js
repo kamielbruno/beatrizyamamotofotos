@@ -7,7 +7,7 @@ $(document).ready(function(){
             safada.css({'display':'grid'})
         })
     $("#axcvb").click(function(){
-        let sdaju = "php/finishedpay.html"; 
+        let sdaju = "finishedpay.html"; 
         window.open(sdaju,"_self")
     })
 })
