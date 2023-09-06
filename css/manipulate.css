@@ -1,0 +1,29 @@
+.pullItOverimg{position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);width: auto;}
+
+.soPorVoce{width: 90%;height: 80vh;position: absolute;top: 50%;left:50%
+    ;transform: translate(-50%,-50%);background-color: rgb(254, 242, 242);border: 2px solid rgb(188, 175, 175);
+    border-radius: 20px;}
+
+
+
+.easypiece{display: grid;grid-template-rows: 8% 1fr;overflow: hidden;box-sizing: border-box;}
+.bbs{display: grid;justify-content: end;align-items: center;}
+
+.vss{display: grid;grid-template-rows: 1fr 1fr 1fr;}
+.vss p{font-size: 28px; font-weight: 900;color: #02537a;}
+
+.creaxcv{border: 1.2px solid #ccc;;width: 90%;height: 50%;margin: 5%;display: grid;
+    grid-template-columns: 20% 60% 20%;font-weight: bold;
+    background: linear-gradient(to right, #FFB800, #FF721D);border: none;border-radius: 5px;
+    cursor: pointer;text-align: center;text-decoration: none;transition: background 0.3s ease-in-out;}
+
+.centercentar1{padding: 20% 0 0 30%;}
+.centercentar2{padding: 0;margin: 0;display: grid;align-items: center;}
+.centercentar3{display: grid;justify-content: center;align-items: center;}
+
+.verMeusIrmao{display: grid;grid-template-rows: 1fr 1fr;}
+
+
+
+
+*, *:before, *:after {box-sizing: border-box;} .modal-content,.modal-backdrop { height: 0; width: 0; opacity: 0; visibility: hidden; overflow: hidden; cursor: pointer; transition: opacity 0.2s ease-in; } .modal-close {color: #aaa;position: absolute;right: 5px;top: 5px;padding-top: 3px; background: #fff;font-size: 16px;width: 25px;height: 25px;font-weight: bold; text-align: center;cursor: pointer;} .modal-close:hover {color: #333;} .modal-content-btn {position: absolute;text-align: center; cursor: pointer;bottom: 20px;right: 30px;background: #446CB3;color: #fff; width: 50px;border-radius: 2px;font-size: 14px;height: 32px;padding-top: 9px; font-weight: normal;} .modal-content-btn:hover {color: #fff;background: #365690;} .modal-backdrop,.modal-backdrop { background-color: rgba(0, 0, 0, 0.6);width: 100vw;height: 100vh;position: fixed; left: 0;top: 0;z-index: 9;visibility: visible;opacity: 1;transition: opacity 0.2s ease-in;} .modal-container .modal-content, .modal-container .modal-content {opacity: 1;background-color: #fff;max-width: 400px; width: 96%;height: 280px;padding: 10px 30px;position: fixed;left: calc(50% - 200px);top: 12%; border-radius: 4px;z-index: 999;pointer-events: auto;cursor: auto;visibility: visible; box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);} @media (max-width: 400px) {.modal-container .modal-content, .modal-container .modal-content {left: 0;}}

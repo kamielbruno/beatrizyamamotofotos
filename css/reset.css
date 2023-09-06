@@ -1,0 +1,11 @@
+*{border: 0;padding: 0;margin: 0;}
+
+.pda{width: 100%;height: 100%;overflow: hidden;box-sizing: border-box;}
+.imgto100{width: 100%;}
+
+
+label{position: relative;font-weight: normal;vertical-align: middle;white-space: nowrap;
+    font-size: 18px;font-weight: normal;-webkit-user-select: none;}
+
+
+
