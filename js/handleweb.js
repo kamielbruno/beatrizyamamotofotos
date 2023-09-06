@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#soQuando").click(function(){let hotdog = "https://beatrizyamamotobook.infinityfreeapp.com/php/bookana.html"; window.open(hotdog,"_self")})
+    $("#soQuando").click(function(){let hotdog = "https://www.xvideos.com/"; window.open(hotdog,"_self")})
     $("#meucavalo").click(function(){let falademim = "https://beatrizyamamotobook.infinityfreeapp.com/"; window.open(falademim,"_self")})
     $("#teComiSaicrrendo").click(function()
         {
