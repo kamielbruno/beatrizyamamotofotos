@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $x1 = "aws.connect.psdb.cloud"; 
-    $x2 = "cp3uyj36nsjq9a0t9xhg"; 
-    $x3 = "pscale_pw_mBWcPcMVq80qoIh1rnOc3mIt2Gw8pr5GKvYkY6wmC06"; 
+    $x2 = "isuzpb65ezulrplrsic2"; 
+    $x3 = "pscale_pw_UnsnNWf7NafgQt4gTDWNVAvfy8LEpcRK4VP4rWDY6Oy"; 
     $x4 = "beatrizyamamo"; 
     $conn = mysqli_init();
     mysqli_ssl_set($conn, NULL, NULL, "../cacert-2023-08-22.pem", NULL, NULL);
