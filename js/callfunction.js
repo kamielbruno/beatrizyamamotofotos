@@ -61,7 +61,7 @@ function setupFieldPlaceholders() {
                 // "Data": "05/20",
                 "Cvv": "123",
                 "Name": "Ana Maria",
-                "Email": "testgmail@gmail.com"
+                "Email": "te@mail.com ou 78994278497"
             };
             $(this).attr("placeholder", placeholders[field]);
         });
