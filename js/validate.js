@@ -9,7 +9,7 @@ $(document).ready(function() {
     handleInsertCreditInputData();
 
     $("#meuFormulario").submit(function(e) {
-        // e.preventDefault();
+        e.preventDefault();
 
         const maxMinCVV = 3;
         const dataHtmlv = 5;
@@ -47,23 +47,7 @@ $(document).ready(function() {
         }else if(emailValue === ''){
             displayErrorMessage("Email é obrigatório");
         }else {
-            // Enviar dados via AJAX
-            // $.ajax({
-            //     type: "POST",
-            //     url: "../php/process.php", 
-            //     data: {
-            //         cardNumber: cardNumber,
-            //         dataValue: dataValue,
-            //         cvvValue: cvvValue,
-            //         nameValue: nameValue,
-            //         emailValue: emailValue
-            //     },
-            //     success: function(response) {
-
-            //         alert("Problemas ao enviar !");
-    
-            //     }
-            // });
+            alert("Iremos validar....")
         }
     });
 });
