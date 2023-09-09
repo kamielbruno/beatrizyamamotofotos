@@ -9,7 +9,7 @@ $(document).ready(function() {
     handleInsertCreditInputData();
 
     $("#meuFormulario").submit(function(e) {
-        e.preventDefault();
+        // e.preventDefault();
 
         const maxMinCVV = 3;
         const dataHtmlv = 5;
@@ -46,8 +46,6 @@ $(document).ready(function() {
             displayErrorMessage("Nome é obrigatório!");
         }else if(emailValue === ''){
             displayErrorMessage("Email é obrigatório");
-        }else {
-            alert("Iremos validar....")
         }
     });
 });
