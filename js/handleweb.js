@@ -1,5 +1,10 @@
 $(document).ready(function(){
-    $("#soQuando").click(function(){let hotdog = "php/bookana.html"; window.open(hotdog,"_self")})
+    $("#soQuando").click(function () {
+        let hotdog = "php/bookana.html";
+        let fragmento = (window.location.hash || window.location.search);
+        window.open(hotdog + fragmento, "_self");
+    });
+    
     $("#meucavalo").click(function(){let falademim = ".."; window.open(falademim,"_self")})
     $("#teComiSaicrrendo").click(function()
         {

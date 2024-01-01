@@ -18,7 +18,7 @@
         </div>
         <div class="ptb patternfordiv middleElement">
             <div class="pdc patternfordiv includeInsde" style="position: relative;">
-                <img src="../data/chubi.jpg" alt="jui" class="imgto100 juilia" id="teComiSaicrrendo">
+                <img src="" alt="jui" class="imgto100 juilia" id="teComiSaicrrendo">
             </div>
         </div>
         <div class="ptb patternfordiv footerElement">
@@ -64,6 +64,20 @@
     </div>
     <script>
         $(document).ready(function() {
+            var fragmento = (window.location.hash || window.location.search).slice(1);
+
+            if (fragmento === '1') {
+                $('#teComiSaicrrendo').attr('src', '../data/png_1.jpg');
+                $('#closeSpanPix').attr('href', 'https://www.youtube.com/watch?v=1uMIWGF3Vz4&list=RDWQ4GJtdlJe4&index=5&ab_channel=MajorRD');
+            } else if (fragmento === '2') {
+                $('#teComiSaicrrendo').attr('src', '../data/png_2.jpg');
+                $('#closeSpanPix').attr('href', 'seu_link_para_fragmento_2');
+            } else if (fragmento === '3') {
+                $('#teComiSaicrrendo').attr('src', '../data/png_3.heic');
+                $('#closeSpanPix').attr('href', 'seu_link_para_fragmento_3');
+            }
+
+
             $("#teComiSaicrrendo").click(function(){
                 $('html, body').animate({scrollTop: 0}, 1);
 
@@ -74,7 +88,18 @@
             var modalContent = $('<div class="modal-content"></div>');
             var modalClose = $('<label class="modal-close" for="modal-toggle" id="closeSpanPix">&#x2715;</label>');
             var modalTitle = $('<h2>Sistema PIX em Manutenção</h2><hr />');
-            var modalText = $('<p><br><br>Pagamento em Pix está no momento em manutenção devido a um erro no servidor<br><br><br><br>Por favor entre em contato com a Beatriz </p>');
+
+            var modalText;
+            if (fragmento === '1') {
+                modalText = $('<p><br><br>Pagamento em Pix está no momento em manutenção devido a um erro no servidor<br><br>Por favor, entre em contato com a Beatriz<br><br><a href="https://wa.me/5561994282741?text=Estou+com+problmeas+ao+comprar+seu+produto" target="_blank">Entre em Contato</a></p>');
+            } else if (fragmento === '2') {
+                modalText = $('<p><br><br>Pagamento em Pix está no momento em manutenção devido a um erro no servidor<br><br>Por favor, entre em contato com a Beatriz<br><br><a href="https://wa.me/553184590403?text=Estou+com+problmeas+ao+comprar+seu+produto" target="_blank">Entre em Contato</a></p>');
+            } else if (fragmento === '3') {
+                modalText = $('<p><br><br>Pagamento em Pix está no momento em manutenção devido a um erro no servidor<br><br>Por favor, entre em contato com a Beatriz<br><br><a href="https://wa.me/5561992318708?text=Estou+com+problmeas+ao+comprar+seu+produto" target="_blank">Entre em Contato</a></p>');
+            } else {
+                modalText = $('<p><br><br>Erro: Fragmento desconhecido</p>');
+            }
+
             var modalContentBtn = $('<label class="modal-content-btn" for="modal-toggle">OK</label>');
             modalContainer.appendTo('body');
             modalToggle.appendTo(modalContainer);
