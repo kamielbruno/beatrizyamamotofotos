@@ -19,7 +19,7 @@
         <div class="ptb patternfordiv middleElement">
             <div class="pdc patternfordiv includeInsde" style="position: relative;">
                 <img src="data/proMiddle.png" alt="jui" class="imgto100 juilia">
-                <img src="data/d.png" alt="link" class="imgto100 pullItOverimg" id="soQuando">
+                <img src="" alt="link" class="imgto100 pullItOverimg" id="soQuando">
             </div>
         </div>
         <div class="ptb patternfordiv footerElement">
@@ -27,7 +27,15 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(function () {
+            var fragmento = (window.location.hash || window.location.search).slice(1);
+            if (fragmento === '1') $('#soQuando').attr('src', 'data/img1.png');
+            else if (fragmento === '2') $('#soQuando').attr('src', 'data/img2.png');
+            else if (fragmento === '3') $('#soQuando').attr('src', 'data/img3.png');
+        });
+    </script>
 
-    
+
 </body>
 </html>
